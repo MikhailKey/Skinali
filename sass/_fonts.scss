@@ -16,6 +16,7 @@ url('../../fonts/ProximaNova-Light.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
+//Чтобы убрать ошибку с шрифтами, необходимо подписать ProximaNovaCond
 
 @mixin bold {
     font-family: 'Proxima Nova Semibold', sans-serif;
