@@ -313,6 +313,12 @@ input[type="checkbox"]:checked + .light::before {
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 40px;
+  }
+}
+
 .offer {
   padding: 129px 0;
 }
