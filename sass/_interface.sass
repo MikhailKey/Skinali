@@ -8,6 +8,8 @@ body
     text-transform: uppercase
     +bold
     color: $primary
+    &:hover
+        cursor: pointer
 .button 
     border: none
     text-transform: uppercase  
@@ -15,12 +17,41 @@ body
     background-color: $primary
     color: #ffffff
     +bold
+    &:hover
+        cursor: pointer
 .bg-secondary
     background-color: $bg-secondary  
 .input 
     height: 80px
     padding-left: 30px
     border: 1px solid #ddd
+
+//Чекбоксы
+input[type="checkbox"]
+    display: none
+.light
+    display: flex
+    align-items: center
+    font-size: 17px
+    padding-right: 20px
+    &::before
+        content: ''
+        width: 25px
+        height: 25px
+        border: 1px solid #ddd
+        margin-right: 15px
+        transition: 0.3s
+    &:hover
+        cursor: pointer
+input[type="checkbox"]:checked + .light::before
+    background-color: $primary
 @media (max-width: 576px)
     .button
         font-size: 15px
+@media (max-width: 352px)
+    .button
+        font-size: 12px
+    .light
+        font-size: 13px
+        &::before
+            margin-right: 10px
