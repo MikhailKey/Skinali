@@ -1,6 +1,15 @@
 body 
     +light
     color: $text-color
+.section
+    padding: 100px 0
+    &-title
+        font-size: 30px
+        +bold
+        text-align: center
+        text-transform: uppercase
+    &__title
+        margin-bottom: 100px
 .button-o
     background-color: white
     border: 2px solid $primary
@@ -48,6 +57,12 @@ input[type="checkbox"]:checked + .light::before
 @media (max-width: 576px)
     .button
         font-size: 15px
+    .section
+        padding: 50px 0
+        &-title
+            font-size: 24px
+        
+
 @media (max-width: 352px)
     .button
         font-size: 12px
