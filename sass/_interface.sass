@@ -1,8 +1,10 @@
 body 
     +light
     color: $text-color
+img 
+    max-width: 100%
 .section
-    padding: 100px 0
+    padding-top: 100px  
     &-title
         font-size: 30px
         +bold
@@ -28,6 +30,19 @@ body
     +bold
     &:hover
         cursor: pointer
+    &-fitting
+        color: $primary
+        background-color: #ffffff
+    &-like
+        padding-top: 5px
+        background-color: $primary
+        height: 30px
+        width: 30px
+        border: none
+    &-add
+        background-color: lighten($primary, 10%)
+        color: #ffffff
+         
 .bg-secondary
     background-color: $bg-secondary  
 .input 
@@ -58,9 +73,10 @@ input[type="checkbox"]:checked + .light::before
     .button
         font-size: 15px
     .section
-        padding: 50px 0
+        padding: 30px 0
         &-title
             font-size: 24px
+            margin-bottom: 50px
         
 
 @media (max-width: 352px)
