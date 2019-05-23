@@ -369,12 +369,20 @@ input[type="checkbox"]:checked + .light::before {
 }
 
 .offer-block {
-  background: #fff url("../img/offer/offer-bg.png") no-repeat center right;
-  background-size: contain;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   padding: 80px;
   margin-top: -220px;
+}
+
+.offer-block__calc-bg {
+  background: #fff url("../img/offer/offer-bg.png") no-repeat center right;
+  background-size: contain;
+}
+
+.offer-block__price-bg {
+  background: #fff url("../img/offer/offer-bg-2.png") no-repeat center right;
+  background-size: contain;
 }
 
 .offer__title {
@@ -388,6 +396,7 @@ input[type="checkbox"]:checked + .light::before {
   display: block;
   font-size: 21px;
   margin-bottom: 40px;
+  max-width: 750px;
 }
 
 .form__row {
@@ -429,6 +438,16 @@ input[type="checkbox"]:checked + .light::before {
   width: 100%;
 }
 
+.form-button {
+  width: 80%;
+}
+
+.form__policy {
+  width: 320px;
+  display: block;
+  margin-left: -60px;
+}
+
 @media (max-width: 1199px) {
   .offer-block {
     background-position: center right -100px;
@@ -460,6 +479,13 @@ input[type="checkbox"]:checked + .light::before {
   }
   .form__input {
     margin-bottom: 20px;
+  }
+  .form__policy {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .form-button {
+    width: 100%;
   }
 }
 
@@ -574,6 +600,26 @@ input[type="checkbox"]:checked + .light::before {
   display: block;
 }
 
+@media (max-width: 1399px) {
+  .catalog-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .catalog-card {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1259px) {
+  .catalog-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .catalog-card {
+    max-width: 480px;
+  }
+}
+
 @media (max-width: 1199px) {
   .catalog-block {
     -webkit-box-pack: center;
@@ -581,7 +627,7 @@ input[type="checkbox"]:checked + .light::before {
             justify-content: center;
   }
   .catalog-card {
-    max-width: 570px;
+    max-width: 500px;
   }
 }
 
@@ -728,6 +774,19 @@ input[type="checkbox"]:checked + .light::before {
   bottom: -80px;
 }
 
+@media (max-width: 1399px) {
+  .price-block {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-block__card {
+    margin: 30px;
+  }
+}
+
 @media (max-width: 1199px) {
   .price-block {
     -webkit-box-pack: center;
@@ -769,10 +828,32 @@ input[type="checkbox"]:checked + .light::before {
       flex-wrap: wrap;
 }
 
+@media (max-width: 1199px) {
+  .step {
+    width: 33%;
+  }
+  .step-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 @media (max-width: 991px) {
   .step {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    max-width: 200px;
+  }
+  .step-block {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .step {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 200px;
   }
 }
 
@@ -781,5 +862,57 @@ input[type="checkbox"]:checked + .light::before {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .step__text {
+    max-width: 300px;
+  }
+}
+
+.reviews {
+  background-color: #f1f1f1;
+}
+
+.reviews-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews-slider__item {
+  text-align: center;
+}
+
+.reviews-slider__image {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #6a99e9;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.reviews-slider__text {
+  position: relative;
+  font-size: 15px;
+  font-style: italic;
+  max-width: 370px;
+  min-height: 130px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.reviews-slider__text:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-top: 10px solid #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
