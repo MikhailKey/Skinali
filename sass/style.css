@@ -481,6 +481,7 @@ input[type="checkbox"]:checked + .light::before {
     margin-bottom: 20px;
   }
   .form__policy {
+    width: 420px;
     margin-top: 10px;
     margin-left: 0px;
   }
@@ -869,6 +870,7 @@ input[type="checkbox"]:checked + .light::before {
 
 .reviews {
   background-color: #f1f1f1;
+  padding-bottom: 200px;
 }
 
 .reviews-slider {
@@ -914,5 +916,27 @@ input[type="checkbox"]:checked + .light::before {
           transform: translateX(-50%);
   border: 10px solid transparent;
   border-top: 10px solid #ffffff;
+}
+
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory-block__image {
+  margin: 20px 0s;
+}
+
+.factory-block__text {
+  margin-left: 70px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
