@@ -61,6 +61,7 @@ img {
   font-family: 'Proxima Nova Semibold', sans-serif;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0px;
   margin-bottom: 100px;
 }
 
@@ -871,6 +872,7 @@ input[type="checkbox"]:checked + .light::before {
 .reviews {
   background-color: #f1f1f1;
   padding-bottom: 200px;
+  padding-top: 0px;
 }
 
 .reviews-slider {
@@ -918,6 +920,10 @@ input[type="checkbox"]:checked + .light::before {
   border-top: 10px solid #ffffff;
 }
 
+.factory {
+  padding-top: 0px;
+}
+
 .factory-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -934,9 +940,62 @@ input[type="checkbox"]:checked + .light::before {
 }
 
 .factory-block__text {
+  width: 200px;
   margin-left: 70px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  .factory-block__text {
+    margin-left: 0px;
+  }
+}
+
+.contacts {
+  background-color: #f6f7f9;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts-block__item {
+  text-align: center;
+}
+
+.contacts__image {
+  margin-bottom: 25px;
+}
+
+.contacts__text {
+  font-size: 16px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #262626;
+}
+
+.contacts__adress {
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .contacts-block__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contacts__adress {
+    min-width: 200px;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
