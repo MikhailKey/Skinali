@@ -998,4 +998,118 @@ input[type="checkbox"]:checked + .light::before {
     margin: auto;
   }
 }
+
+.questions-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.questions__title {
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  margin: 0;
+}
+
+.questions__link {
+  font-size: 24px;
+  color: #507fe1;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #262626;
+  color: #ffffff;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-description__title {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.footer-description__subtitle {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.footer-description__copy {
+  color: #767676;
+}
+
+.footer-pay {
+  margin-top: -85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-pay__logo {
+  margin: 0 15px;
+}
+
+.footer-contacts {
+  text-align: right;
+}
+
+.footer-contacts__phone {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.footer-contacts__mail {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-social__image {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-pay {
+    margin: 20px 0;
+  }
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer-contacts {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
