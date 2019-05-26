@@ -24,7 +24,10 @@
         display: block
         font-size: 14px 
         color: $text-color-light
-        text-decoration: none
+        text-decoration: non
+.decoration
+    background-color: rgba($primary, 1) !important
+    transition: 0.4s
 .menu
     z-index: 0
     position: fixed
@@ -37,6 +40,7 @@
     transform: translateY(-200%)
     opacity: 0
     &_active
+        z-index: 10
         transform: translateY(0%)
         opacity: 1
     &__nav
@@ -58,6 +62,10 @@
         border-left: 1px solid rgba(#510bba, 0.1) 
         height: 80px
         width: 70px 
+        &:hover
+            cursor: pointer
+        &:focus
+            outline: none
         &__line 
             display: block
             width: 20px
@@ -78,12 +86,15 @@
         color: $text-color-light
 
 @media (max-width: 991px)
+    .menu
+        &__nav
+            font-size: 12px
 
     .navbar
         &__mobile, &__landline
             display: none
 
-@media (max-width: 576px)
+@media (max-width: 768px)
     .logo
         display: none
     .menu
