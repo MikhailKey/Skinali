@@ -1104,6 +1104,12 @@ input[type="checkbox"]:checked + .light::before {
   }
 }
 
+@media (max-width: 576px) {
+  .before {
+    display: none;
+  }
+}
+
 .reviews {
   background-color: #f1f1f1;
   padding-bottom: 200px;
