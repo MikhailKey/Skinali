@@ -28,4 +28,14 @@ $(window).load(function() {
     return false;
     });
     $('input[type="tel"]').mask("+7 (999) 999-99-99");
+    /*Показывать карту только когда докрутили до неё*/
+    var reviews = $('.reviews');
+    var reviewsTop = reviews.offset().top;
+    $(window).bind('scroll', function () {
+        var windowTop = $(this).scrollTop();
+        if (windowTop > reviewsTop) {
+            $('.map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6bf9303fb583f9e430a359f17a9b9bf3f7a92b9ec8c1cc6dc670dd1fde22ce0c&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>')
+            $(window).unbind('scroll')
+        }
+    });
 });
