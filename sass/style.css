@@ -629,6 +629,7 @@ input[type="checkbox"]:checked + .light::before {
   }
   .form__policy {
     font-size: 10px;
+    width: 100%;
   }
   .form-button {
     font-size: 12px;
@@ -1097,6 +1098,12 @@ input[type="checkbox"]:checked + .light::before {
           transform: translateX(150%);
 }
 
+@media (max-width: 576px) {
+  .before-slider-arrows {
+    display: none;
+  }
+}
+
 .reviews {
   background-color: #f1f1f1;
   padding-bottom: 200px;
@@ -1178,6 +1185,12 @@ input[type="checkbox"]:checked + .light::before {
 .review-arrow-right {
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
+}
+
+@media (max-width: 576px) {
+  .reviews-slider-arrows {
+    display: none;
+  }
 }
 
 .factory {
@@ -1289,6 +1302,15 @@ input[type="checkbox"]:checked + .light::before {
 @media (max-width: 991px) {
   .questions__link {
     text-align: right;
+  }
+}
+
+@media (max-width: 576px) {
+  .questions__title {
+    font-size: 20px;
+  }
+  .questions__link {
+    font-size: 15px;
   }
 }
 
