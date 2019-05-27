@@ -37,8 +37,8 @@
 
 @font-face {
   font-family: 'Proxima Nova Light';
-  src: url("../../fonts/ProximaNova-Light.eot");
-  src: url("../../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/ProximaNova-Light.woff") format("woff"), url("../../fonts/ProximaNova-Light.ttf") format("truetype");
+  src: url("../../fonts/ProximaNovaCond-Light.eot");
+  src: url("../../fonts/ProximaNovaCond-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/ProximaNovaCond-Light.woff") format("woff"), url("../../fonts/ProximaNovaCond-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -611,7 +611,7 @@ input[type="checkbox"]:checked + .light::before {
     margin-bottom: 20px;
   }
   .form__policy {
-    width: 420px;
+    width: 100%;
     margin-top: 10px;
     margin-left: 0px;
   }
